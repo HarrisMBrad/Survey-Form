@@ -17,73 +17,22 @@
 	<br>
 	<style>
 		h1 {
-			box-shadow: 1px 1px 1px 1px purple;
-			
+			box-shadow: 1px 1px 1px 1px rgb(34, 0, 128);
+
 		}
 
 		p {
 			color: red;
 		}
 
-		input[type=text] {
-			h2 {
-				position: relative;
-				top-offset: 1px;
-				right-offset: 15px;
-
-			}
-
-			width: 100%;
-			box-sizing: border-box;
-			border: 2px solid #ccc;
-			border-radius: 4px;
-			font-size: 16px;
-			background-color: white;
-			background-image: url('searchicon.png');
-			background-position: 10px 10px;
-			background-color: transparent;
-			border-radius: 50%;
-			box-shadow: 5px 5px 0px 0px #FFCCCC;
+		.special {
+			color: red;
 		}
 
-		input[type=text],
-		select {
-			h2 {
-				position: relative;
-				top-offset: 0px;
-				right-offset: 15px;
-
-
-			}
-
-			width: 100%;
-			padding: 12px 20px;
-			margin: 8px 0;
-			display: inline-block;
-			background-color: #CCFFFF;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			box-sizing: border-box;
+		p {
+			color: blue;
 		}
 
-		input[type=submit] {
-			h3 {
-				position: relative;
-				bottom-offset: 5px;
-				right-offset: 50px;
-
-
-			}
-
-			width: 100%;
-			background-color: #FFCCCC;
-			color: white;
-			padding: 14px 20px;
-			margin: 8px 0;
-			border: none;
-			border-radius: 2px;
-			cursor: pointer;
-		}
 
 		p {
 			position: relative;
@@ -94,7 +43,7 @@
 		input[type=submit]:hover {
 			position: reletive;
 			background-color: #CCFFFF;
-			right-offset: 50px;
+
 		}
 
 		div {
@@ -123,7 +72,6 @@
 
 		button {
 			position: relative;
-			bottom-offset: 10px;
 			left: 45%;
 			background-color: #CCFFFF;
 			box-shadow: 1px 1px 1px 1px purple;
@@ -139,6 +87,7 @@
 			top: auto;
 			overflow: hidden;
 		}
+
 
 		body {
 			color: hsl(0, 60%, 35%);
@@ -209,7 +158,7 @@
 			</fieldset>
 			<br>
 			<fieldset>
-				<legend>Would you recommend freeCodeCamp to a friend?</legend>
+				<legend>Would you recommend this course to a friend?</legend>
 				<input id="newbie" type="radio" name="levels" value="newbie">
 				<label for="newbie">Definitely</label><br>
 				<input id="intermediate" type="radio" name="levels" value="intermediate">
@@ -219,7 +168,7 @@
 			</fieldset>
 			<br>
 			<fieldset>
-				<legend>What is your favorite feature of freeCodeCamp?</legend>
+				<legend>What is your favorite feature of this code base?</legend>
 				<input id="newbie" type="radio" name="levels" value="newbie">
 				<label for="newbie">Challenges</label><br>
 				<input id="intermediate" type="radio" name="levels" value="intermediate">
