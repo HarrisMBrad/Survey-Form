@@ -8,69 +8,32 @@
 	<meta name="theme-color" content="#000000" />
 
 	<title id="title">Survey Form</title>
+
 	<h1> Survey Form</h1>
+
+	<link rel="stylesheet" href="styles.css">
 
 	<h3>Thank you for taking the time to help us improve the platform.</h3>
 
 	<br>
 	<style>
+		h1 {
+			box-shadow: 1px 1px 1px 1px purple;
 
-		input[type=text] {
-			h2 {
-				position: relative;
-				top-offset: 1px;
-				right-offset: 15px;
-
-			}
-			width: 100%;
-			box-sizing: border-box;
-			border: 2px solid #ccc;
-			border-radius: 4px;
-			font-size: 16px;
-			background-color: white;
-			background-image: url('searchicon.png');
-			background-position: 10px 10px;
-			background-color: transparent;
-			border-radius: 50%;
-			box-shadow: 5px 5px 0px 0px #FFCCCC;
 		}
 
-		input[type=text],
-		select {
-			h2 {
-				position: relative;
-				top-offset: 0px;
-				right-offset: 15px;
-
-
-			}
-			width: 100%;
-			padding: 12px 20px;
-			margin: 8px 0;
-			display: inline-block;
-			background-color: #CCFFFF;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			box-sizing: border-box;
+		p {
+			color: red;
 		}
 
-		input[type=submit] {
-			h3 {
-				position: relative;
-				bottom-offset: 5px;
-				right-offset: 50px;
-
-
-			}
-			width: 100%;
-			background-color: #FFCCCC;
-			color: white;
-			padding: 14px 20px;
-			margin: 8px 0;
-			border: none;
-			border-radius: 2px;
-			cursor: pointer;
+		.special {
+			color: red;
 		}
+
+		p {
+			color: blue;
+		}
+
 
 		p {
 			position: relative;
@@ -81,7 +44,7 @@
 		input[type=submit]:hover {
 			position: reletive;
 			background-color: #CCFFFF;
-			right-offset: 50px;
+
 		}
 
 		div {
@@ -117,12 +80,13 @@
 
 		button {
 			position: relative;
-			bottom-offset: 10px;
+
 			left: 45%;
 			background-color: #CCFFFF;
 			box-shadow: 1px 1px 1px 1px purple;
 		}
 	</style>
+
   <br>
    <style>
   .sr-only {
@@ -146,9 +110,11 @@
      
    
   </style>
+
 </head>
 
 <body>
+
 
 	<h3>Survey Model 101</h3>
   <p id="description" id="name" text="Name:">What is your Name?</p>
@@ -252,6 +218,114 @@
 
  
 <script src="script.js" type="module"></script>
+
+
+	<h3>Survey Number One.</h3>
+	<p id="description" id="name" text="Name:">What is your Name?</p>
+
+
+	<form action="/action_page.php" id="survey-form>
+    <input type=" text" id="name" name="name">
+		<br>
+		<input type="text" id="fname" name="firstname" placeholder="Your first name">
+		<input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+		<select id="improvements" name="imp" color="#FFCCCC">
+			<option text="text" value="q1">What would you like to see improved?</option>
+			<br>
+			<option value="Front-end-projects">Front-end Projets</option>
+			<option value="Back-end-projects">Back-end Projects</option>
+			<option value="Data-visualization">Data Visualization</option>
+			<option value="Challenges">Challenges</option>
+			<option value="Open-source-community">Open Source Community</option>
+			<option value="Gitter-help-rooms">Gitter help rooms</option>
+			<option value="Videos">Videos</option>
+			<option value="City-meetups">City Meetups</option>
+			<option value="Wiki">Wiki</option>
+			<option value="Forum">Forum</option>
+			<option value="Additional Courses">Additional Courses</option>
+		</select>
+
+
+		<input id="s" type="submit" value="Submit">
+	</form>
+	</div>
+	<br>
+	<section>
+		<form>
+			<p>What is your best email?</p>
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email">
+
+
+
+			<fieldset>
+				<legend>What is your age group?</legend>
+				<input id="newbie" type="radio" name="levels" value="newbie">
+				<label for="newbie">Minor/Under 18/Student</label><br>
+				<input id="intermediate" type="radio" name="levels" value="intermediate">
+				<label for="intermediate">Adult/Over 18/Student</label><br>
+				<input id="master" type="radio" name="levels" value="master">
+				<label for="master">Adult/Over 18/Non-Student</label>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Which option best describes your current role?</legend>
+				<input id="newbie" type="radio" name="levels" value="newbie">
+				<label for="newbie">Full Time Worker</label><br>
+				<input id="intermediate" type="radio" name="levels" value="intermediate">
+				<label for="intermediate">Full Time Learner</label><br>
+				<input id="master" type="radio" name="levels" value="master">
+				<label for="master">Prefer Not To Say</label>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Would you recommend this course to a friend?</legend>
+				<input id="newbie" type="radio" name="levels" value="newbie">
+				<label for="newbie">Definitely</label><br>
+				<input id="intermediate" type="radio" name="levels" value="intermediate">
+				<label for="intermediate">Maybe</label><br>
+				<input id="master" type="radio" name="levels" value="master">
+				<label for="master">Not Sure</label>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>What is your favorite feature of this code base?</legend>
+				<input id="newbie" type="radio" name="levels" value="newbie">
+				<label for="newbie">Challenges</label><br>
+				<input id="intermediate" type="radio" name="levels" value="intermediate">
+				<label for="intermediate">Projects</label><br>
+				<input id="master" type="radio" name="levels" value="master">
+				<label for="master">Community</label>
+				<br>
+
+				<input id="master-t" type="radio-t" name="levels-t" value="true">...</l>
+			</fieldset>
+			<br>
+			<section>
+
+			</section>
+
+			<input type="submit" name="submit" value="Submit">
+		</form>
+		<div class="survey" id="root">
+			<p>Any comments or suggestions?</p>
+			<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."
+				spellcheck="false" data-ms-editor="true"></textarea>
+
+		</div>
+
+	</section>
+	<br>
+
+
+	<!-- Body of your page... -->
+
+
+
+	<script>
+		window.console = window.console || function (t) { };
+	</script>
 
 
 
