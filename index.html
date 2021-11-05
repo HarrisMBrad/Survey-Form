@@ -7,204 +7,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="theme-color" content="#000000" />
 
-	<title id="title">Survey Form</title>
-	<link rel="stylesheet" href="styles.css">
-
-	<h1>New Survey Form</h1>
-
-	<h3>Thank you for taking the time to help us improve the platform.</h3>
-
-	<br>
-	<style>
-		h1 {
-			box-shadow: 1px 1px 1px 1px rgb(34, 0, 128);
-
-		}
-
-		p {
-			color: red;
-		}
-
-		.special {
-			color: red;
-		}
-
-		p {
-			color: blue;
-		}
+	<title id="title">Help Guids</title>
+	<h1>Robotic <Guidance>io</Guidance>
+	</h1>
+	<link rel="stylesheet" href="model-102.css">
+	<h3><br><span>ZONE</span></h3>
 
 
-		p {
-			position: relative;
-			margin: auto;
-			transform: scale(1);
-		}
-
-		input[type=submit]:hover {
-			position: reletive;
-			background-color: #CCFFFF;
-
-		}
-
-		div {
-			position: relative;
-			float: center;
-			border-radius: 10px;
-		}
-
-		p:hover {
-			position: relative;
-			left: 55em;
-			transform: scale(1.2);
-		}
-
-		div:hover {
-			transform: scale(.90);
-		}
-
-		div {
-			border-radius: 10px;
-			width: 100%;
-			height: 100px;
-			margin: 10px auto;
-			background: repeating-linear-gradient(35deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255));
-		}
-
-		button {
-			position: relative;
-			left: 45%;
-			background-color: #CCFFFF;
-			box-shadow: 1px 1px 1px 1px purple;
-		}
-	</style>
-	<br>
-	<style>
-		.sr-only {
-			position: absolute;
-			left: -10000px;
-			width: 1px;
-			height: 1px;
-			top: auto;
-			overflow: hidden;
-		}
-
-
-		body {
-			color: hsl(0, 60%, 35%);
-			background-color: whitesmoke;
-		}
-	</style>
 </head>
 
-<body>
+<body className="helpme">
+  <h1 className="sr-only">Main Model for the Help Me Guides</h1>
 
-	<h3>Survey Number One.</h3>
-	<p id="description" id="name" text="Name:">What is your Name?</p>
-
-
-	<form action="/action_page.php" id="survey-form>
-    <input type=" text" id="name" name="name">
-		<br>
-		<input type="text" id="fname" name="firstname" placeholder="Your first name">
-		<input type="text" id="lname" name="lastname" placeholder="Your last name">
-
-		<select id="improvements" name="imp" color="#FFCCCC">
-			<option text="text" value="q1">What would you like to see improved?</option>
-			<br>
-			<option value="Front-end-projects">Front-end Projets</option>
-			<option value="Back-end-projects">Back-end Projects</option>
-			<option value="Data-visualization">Data Visualization</option>
-			<option value="Challenges">Challenges</option>
-			<option value="Open-source-community">Open Source Community</option>
-			<option value="Gitter-help-rooms">Gitter help rooms</option>
-			<option value="Videos">Videos</option>
-			<option value="City-meetups">City Meetups</option>
-			<option value="Wiki">Wiki</option>
-			<option value="Forum">Forum</option>
-			<option value="Additional Courses">Additional Courses</option>
-		</select>
+  <!-- Body of your page... -->
+  <main className="special">
+    <h2>One - You May need Special Help</h2>
+    <h3>Two - You May Not Know It</h3>
+    <h4 className="zone">Three - Being-that-as-it-may, lets' show it.</h4>
+    <h5 className="click-container">Don't Flex ZONE!</h5>
+    <ul>       
+      <li>Fan Mail</li>
+       <li>Music Economy</li>
+        <li>Tokens</li>
+         <li>Notifications</li>
+          <li>Venues</li>
+           <li>Privacy</li>
+           <li>Communications Managment</li>
+    </ul>
+    <p>Do not hover over me just read this and stay privy all along the way. </p>
+    
+  </main>
+  <section>
+    <br>
+    <p>...don't flex zone.</p>
+    </section> 
 
 
-		<input id="s" type="submit" value="Submit">
-	</form>
-	</div>
-	<br>
-	<section>
-		<form>
-			<p>What is your best email?</p>
-			<label for="email">Email:</label>
-			<input type="text" id="email" name="email">
-
-
-
-			<fieldset>
-				<legend>What is your age group?</legend>
-				<input id="newbie" type="radio" name="levels" value="newbie">
-				<label for="newbie">Minor/Under 18/Student</label><br>
-				<input id="intermediate" type="radio" name="levels" value="intermediate">
-				<label for="intermediate">Adult/Over 18/Student</label><br>
-				<input id="master" type="radio" name="levels" value="master">
-				<label for="master">Adult/Over 18/Non-Student</label>
-			</fieldset>
-			<br>
-			<fieldset>
-				<legend>Which option best describes your current role?</legend>
-				<input id="newbie" type="radio" name="levels" value="newbie">
-				<label for="newbie">Full Time Worker</label><br>
-				<input id="intermediate" type="radio" name="levels" value="intermediate">
-				<label for="intermediate">Full Time Learner</label><br>
-				<input id="master" type="radio" name="levels" value="master">
-				<label for="master">Prefer Not To Say</label>
-			</fieldset>
-			<br>
-			<fieldset>
-				<legend>Would you recommend this course to a friend?</legend>
-				<input id="newbie" type="radio" name="levels" value="newbie">
-				<label for="newbie">Definitely</label><br>
-				<input id="intermediate" type="radio" name="levels" value="intermediate">
-				<label for="intermediate">Maybe</label><br>
-				<input id="master" type="radio" name="levels" value="master">
-				<label for="master">Not Sure</label>
-			</fieldset>
-			<br>
-			<fieldset>
-				<legend>What is your favorite feature of this code base?</legend>
-				<input id="newbie" type="radio" name="levels" value="newbie">
-				<label for="newbie">Challenges</label><br>
-				<input id="intermediate" type="radio" name="levels" value="intermediate">
-				<label for="intermediate">Projects</label><br>
-				<input id="master" type="radio" name="levels" value="master">
-				<label for="master">Community</label>
-				<br>
-
-				<input id="master-t" type="radio-t" name="levels-t" value="true">...</l>
-			</fieldset>
-			<br>
-			<section>
-
-			</section>
-
-			<input type="submit" name="submit" value="Submit">
-		</form>
-		<div class="survey" id="root">
-			<p>Any comments or suggestions?</p>
-			<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."
-				spellcheck="false" data-ms-editor="true"></textarea>
-
-		</div>
-
-	</section>
-	<br>
-
-
-	<!-- Body of your page... -->
-
-
-
-	<script>
-		window.console = window.console || function (t) { };
-	</script>
-
+  <script src="script.js" type="module"></script>
 
 </body>
 
