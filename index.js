@@ -1,4 +1,35 @@
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js';
+import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js';
+
 import Contact from "./Contact.js";
+// I need help to see if these look correct...???
+const firebaseApp = initializeApp({
+    apiKey: 'AIzaSyBlbDFoEU1MoS9tGayVgfrRbBP7caO20Mc',
+    authDomain: 'org.ibg.brad.part4',
+    projectId: 'listviewresults',
+    storgageBucket: 'listviewresults.appspot.com',
+    messagingSenderId: '279563219766',
+    appId: '1:279563219766:android:d061c4ab97de7e9fa4f997',
+    measurmentId: ''
+});
+
+const auth = getAuth(firebase);
+const db = getFireStore(firebaseApp);
+db.collection('todos').getDocs();
+const todosCol = collection(db, 'todos');
+const snapshot = await getDocs(todosCol);
+
+// Detect auth state
+auth.onAuthStateChanged(user => {
+
+})
+onAuthStateChanged(auth, user => {
+    if (user != null) {
+        console.log('logged in!');
+    } else {
+        consile.log('No User');
+    }
+});
 
 // Listener
 form.addEventListener("submit", function (event) {
@@ -96,5 +127,5 @@ function processFormData(e) {
     }
 }
 processFormData();
-// Event Listener 
+// Event Listener
 
