@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "279563219766",
+    "firebase_url": "https://listviewresults.firebaseio.com",
+    "project_id": "listviewresults",
+    "storage_bucket": "listviewresults.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279563219766:android:d061c4ab97de7e9fa4f997",
+        "android_client_info": {
+          "package_name": "org.ibg.brad.part4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279563219766-3h52f30ai5u4e1ru884fh3jldo7pomjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyD3cThuTC-PvTKO7UxSijSdJwf9rNHcE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279563219766-3h52f30ai5u4e1ru884fh3jldo7pomjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
