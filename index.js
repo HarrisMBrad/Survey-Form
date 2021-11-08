@@ -2,7 +2,7 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.3.0/firebase
 import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js';
 
 import Contact from "./Contact.js";
-// I need help to see if these look correct...???
+// this db was first init for android.
 const firebaseApp = initializeApp({
     apiKey: 'AIzaSyBlbDFoEU1MoS9tGayVgfrRbBP7caO20Mc',
     authDomain: 'org.ibg.brad.part4',
