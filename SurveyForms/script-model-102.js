@@ -13,65 +13,65 @@ if (this.helper != 'true' + 'love') {
 
 
 //boolean checks
-var magic = true;
-var isHelp = false;
+let magic = true;
+let isHelp = false;
 //number checks
-var helpAge = 0;
-var ticketNum = {
+let helpAge = 0;
+let ticketNum = {
   // holds ticket numbers
 };
 //string checks 
-var helpColor = "clear";
-var favoriteQuote = "I'm not false, I'm " + helpAge + " && \"clear\"";
+let helpColor = "clear";
+let favoriteQuote = "I'm not false, I'm " + helpAge + " && \"clear\"";
 //Array checks
-var helpQ = ["someOther", "another", "other"];
-var helper = ["true", "clear", "{helpAge: true}"];
+let helpQ = ["someOther", "another", "other"];
+let helper = ["true", "clear", "{helpAge: true}"];
 //Tuple started
-var helpBasket;
+let helpBasket;
 helpBasket = ["clear", 0];
 //Enum checker 
-var Size_er;
+let Size_er;
 (function (Size_er) {
   Size_er[Size_er["Small"] = 1] = "Small";
   Size_er[Size_er["Medium"] = 2] = "Medium";
   Size_er[Size_er["Large"] = 3] = "Large";
 })(Size_er || (Size_er = {}));
-var pQ, number;
+let pQ, number;
 alert("clear"); // Displays 'Medium' as its value is 2 above
 //Any stranger help
-var StrangerHelp = "aaaagh...noooooo!";
+let StrangerHelp = "aaaagh...noooooo!";
 //void checker
-var voildHelp = function () { return console.log("voided-help"); };
+let voildHelp = function () { return console.log("voided-help"); };
 //null and undefined to throw in the evaluations as needed
-var meh = undefined;
-var noo = null;
+let meh = undefined;
+let noo = null;
 //never want an error unless on purpose... blah blah blah
-var error = function () {
+let error = function () {
   throw Error("blah blah blah!");
 };
 // Type Assertions:
-var ohhithere = "OH HI THERE";
-var strLength = ohhithere.length;
-var helperRobotArmy = function (fighters) {
+let ohhithere = "OH HI THERE";
+let strLength = ohhithere.length;
+let helperRobotArmy = function (fighters) {
   console.log("FIGHT!");
   return fighters;
 };
-var helperRobotArmy2 = function (help) {
+let helperRobotArmy2 = function (help) {
   console.log("HELP!");
   return help;
 };
 //Function
-var helpRobotArmyF = function (foebots) {
+let helpRobotArmyF = function (foebots) {
   console.log("HELP VOID!");
   return foebots;
 
 };
-var helpRobotArmy2F = function (foebots) {
+let helpRobotArmy2F = function (foebots) {
   console.log("HELP!");
   return foebots;
 };
 // *** Classes
-var Person = /** @class */ (function () {
+let Person = /** @class */ (function () {
   function Person(sound) {
     this.sing = "may I help you?";
     this.sing = sound;
@@ -81,16 +81,16 @@ var Person = /** @class */ (function () {
   };
   return Person;
 }());
-var person = new Person("Hello there");
+let person = new Person("Hello there");
 person.sing;
 //In TypeScript, there are several places where type inference
 //is used to provide type information when there is no explicit
 //type annotation. For example, in this code
-var faqs = 1;
+let faqs = 1;
 // automatimally detexts faqs is a number 1.
 //Union Type
-var confused = true;
+let confused = true;
 helperRobotArmy.toString().valueOf().length;
 helperRobotArmy2.toString().toUpperCase().length;
 // magic check on myPerson...
-var myPerson = { magic: "true" };
+let myPerson = { magic: "true" };
