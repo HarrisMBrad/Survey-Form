@@ -1,0 +1,23 @@
+{
+  "name": "survey-form",
+  "version": "1.0.0",
+  "description": "A Responsive Web Design Survey Form for this code base and project. :rocket:\r ## Reson De Tour\r For collection oppinions about this repository and staying connected with the latest deveopments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarrisMBrad/Survey-Form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarrisMBrad/Survey-Form/issues"
+  },
+  "homepage": "https://github.com/HarrisMBrad/Survey-Form#readme",
+  "dependencies": {
+    "firebase": "^9.3.0"
+  }
+}
