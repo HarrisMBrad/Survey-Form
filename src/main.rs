@@ -27,4 +27,19 @@ fn main() {
     }
 
     println!("Total: {:?}", total);
+
+    let items: [i32; 6] = [1, 2, 3, 4, 5, 6];
+    println!("{:?}", items);
+
+    let vector_items = vec![1, 2, 3, 4, 5, 6];
+    let mut vector_items_2 = Vec::new();
+    vector_items_2.push(1);
+    vector_items_2.push(2);
+    vector_items_2.push(3);
+    vector_items_2.push(4);
+    vector_items_2.push(5);
+    vector_items_2.push(6);
+
+    println!("{:?}", vector_items);
+    println!("{:?}", vector_items_2);
 }
