@@ -1,366 +1,366 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to Firebase Hosting</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/9.4.0/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/9.4.0/firebase-auth.js"></script>
-  <script defer src="/__/firebase/9.4.0/firebase-database.js"></script>
-  <script defer src="/__/firebase/9.4.0/firebase-firestore.js"></script>
-  <script defer src="/__/firebase/9.4.0/firebase-functions.js"></script>
-  <script defer src="/__/firebase/9.4.0/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/9.4.0/firebase-storage.js"></script>
-  <script defer src="/__/firebase/9.4.0/firebase-analytics.js"></script>
-  <script defer src="/__/firebase/9.4.0/firebase-remote-config.js"></script>
-  <script defer src="/__/firebase/9.4.0/firebase-performance.js"></script>
-  <!-- 
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.4.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.4.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-functions.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-performance.js"></script>
+    <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
-  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-  <style media="screen">
-    body {
-      background: whitesmoke;
-      color: rgba(0, 0, 0, 0.87);
-      font-family: Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    #message {
-      background: rgb(201, 200, 200);
-      max-width: 360px;
-      margin: 100px auto 16px;
-      padding: 32px 24px;
-      border-radius: 3px;
-    }
-
-    #message h2 {
-      color: #ffa100;
-      font-weight: bold;
-      font-size: 16px;
-      margin: 0 0 8px;
-    } 
-
-    #message h1 {
-      font-size: 22px;
-      font-weight: 300;
-      color: rgba(0, 0, 0, 0.6);
-      margin: 0 0 16px;
-    }
-
-    #message p {
-      line-height: 140%;
-      margin: 16px 0 24px;
-      font-size: 14px;
-    }
-
-    #message a {
-      display: block;
-      text-align: center;
-      background: #039be5;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: white;
-      padding: 16px;
-      border-radius: 4px;
-    }
-
-    #message,
-    #message a {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    }
-
-    #load {
-      color: rgba(0, 0, 0, 0.4);
-      text-align: center;
-      font-size: 13px;
-    }
-
-    @media (max-width: 600px) {
-
-      body,
-      #message {
-        margin-top: 0;
-        background: whitesmoke;
-        box-shadow: none;
-      }
-
+    <style media="screen">
       body {
-        border-top: 16px solid #ffa100;
+        background: whitesmoke;
+        color: rgba(0, 0, 0, 0.87);
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <div id="message">
-    <h2>Awe Yeah! & Welcome</h2>
-    <h1>Firebase Hosting Setup Complete</h1>
-    <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something
-      extraordinary!</p>
-    <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-  </div>
-  <p id="load">Firebase SDK Loading&hellip;</p>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const loadEl = document.querySelector('#load');
-      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-      // // The Firebase SDK is initialized and available here!
-      //
-      // firebase.auth().onAuthStateChanged(user => { });
-      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-      // firebase.firestore().doc('/foo/bar').get().then(() => { });
-      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-      // firebase.messaging().requestPermission().then(() => { });
-      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-      // firebase.analytics(); // call to activate
-      // firebase.analytics().logEvent('tutorial_completed');
-      // firebase.performance(); // call to activate
-      //
-      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-      try {
-        let app = firebase.app();
-        let features = [
-          'auth',
-          'database',
-          'firestore',
-          'functions',
-          'messaging',
-          'storage',
-          'analytics',
-          'remoteConfig',
-          'performance',
-        ].filter(feature => typeof app[feature] === 'function');
-        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-      } catch (e) {
-        console.error(e);
-        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      #message {
+        background: rgb(201, 200, 200);
+        max-width: 360px;
+        margin: 100px auto 16px;
+        padding: 32px 24px;
+        border-radius: 3px;
       }
-    });
-  </script>
 
-  <h3>Survey Model 101</h3>
-  <p id="description" id="name" text="Name:">What is your Name?</p>
+      #message h2 {
+        color: #ffa100;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
 
+      #message h1 {
+        font-size: 22px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 0 0 16px;
+      }
 
-  <form action="/action_page.php" id="survey-form>
-          <input type=" text" id="name" name="name">
-    <br>
-    <input type="text" id="fname" name="firstname" placeholder="Your first name">
-    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+      #message p {
+        line-height: 140%;
+        margin: 16px 0 24px;
+        font-size: 14px;
+      }
 
-    <select id="improvements" name="imp" color="#FFCCCC">
-      <option text="text" value="q1">What would you like to see improved?</option>
-      <br>
-      <option value="Front-end-projects">Front-end Projets</option>
-      <option value="Back-end-projects">Back-end Projects</option>
-      <option value="Data-visualization">Data Visualization</option>
-      <option value="Challenges">Challenges</option>
-      <option value="Open-source-community">Open Source Community</option>
-      <option value="Gitter-help-rooms">Gitter help rooms</option>
-      <option value="Videos">Videos</option>
-      <option value="City-meetups">City Meetups</option>
-      <option value="Wiki">Wiki</option>
-      <option value="Forum">Forum</option>
-      <option value="Additional Courses">Additional Courses</option>
-    </select>
+      #message a {
+        display: block;
+        text-align: center;
+        background: #039be5;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        padding: 16px;
+        border-radius: 4px;
+      }
 
+      #message,
+      #message a {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
 
-    <input id="s" type="submit" value="Submit">
-  </form>
-  </div>
-  <br>
-  <section>
-    <form>
-      <p>What is your best email?</p>
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email">
+      #load {
+        color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        font-size: 13px;
+      }
 
+      @media (max-width: 600px) {
 
+        body,
+        #message {
+          margin-top: 0;
+          background: whitesmoke;
+          box-shadow: none;
+        }
 
-      <fieldset>
-        <legend>What is your age group?</legend>
-        <input id="newbie" type="radio" name="levels" value="newbie">
-        <label for="newbie">Minor/Under 18/Student</label><br>
-        <input id="intermediate" type="radio" name="levels" value="intermediate">
-        <label for="intermediate">Adult/Over 18/Student</label><br>
-        <input id="master" type="radio" name="levels" value="master">
-        <label for="master">Adult/Over 18/Non-Student</label>
-      </fieldset>
-      <br>
-      <fieldset>
-        <legend>Which option best describes your current role?</legend>
-        <input id="newbie" type="radio" name="levels" value="newbie">
-        <label for="newbie">Full Time Worker</label><br>
-        <input id="intermediate" type="radio" name="levels" value="intermediate">
-        <label for="intermediate">Full Time Learner</label><br>
-        <input id="master" type="radio" name="levels" value="master">
-        <label for="master">Prefer Not To Say</label>
-      </fieldset>
-      <br>
-      <fieldset>
-        <legend>Would you recommend freeCodeCamp to a friend?</legend>
-        <input id="newbie" type="radio" name="levels" value="newbie">
-        <label for="newbie">Definitely</label><br>
-        <input id="intermediate" type="radio" name="levels" value="intermediate">
-        <label for="intermediate">Maybe</label><br>
-        <input id="master" type="radio" name="levels" value="master">
-        <label for="master">Not Sure</label>
-      </fieldset>
-      <br>
-      <fieldset>
-        <legend>What is your favorite feature of freeCodeCamp?</legend>
-        <input id="newbie" type="radio" name="levels" value="newbie">
-        <label for="newbie">Challenges</label><br>
-        <input id="intermediate" type="radio" name="levels" value="intermediate">
-        <label for="intermediate">Projects</label><br>
-        <input id="master" type="radio" name="levels" value="master">
-        <label for="master">Community</label>
-        <br>
+        body {
+          border-top: 16px solid #ffa100;
+        }
+      }
+    </style>
+  </head>
 
-        <input id="master-t" type="radio-t" name="levels-t" value="true">...</l>
-      </fieldset>
-      <br>
-      <section>
-
-      </section>
-
-      <input type="submit" name="submit" value="Submit">
-    </form>
-    <div class="survey" id="root">
-      <p>Any comments or suggestions?</p>
-      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."
-        spellcheck="false" data-ms-editor="true"></textarea>
-
+  <body>
+    <div id="message">
+      <h2>Awe Yeah! & Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something
+        extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-  </section>
-  <br>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth',
+            'database',
+            'firestore',
+            'functions',
+            'messaging',
+            'storage',
+            'analytics',
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+
+    <h3>Survey Model 101</h3>
+    <p id="description" id="name" text="Name:">What is your Name?</p>
 
 
-  <!-- make new scripts for future -->
-
-
-  <script src="script.js" type="module"></script>
-
-
-  <h3>Survey Number Two.</h3>
-  <p id="description2" id="name2" text="Name:">What is your Name?</p>
-
-
-  <form action="/action_page.php" id="survey-form2>
+    <form action="/action_page.php" id="survey-form>
           <input type=" text" id="name" name="name">
-    <br>
-    <input type="text" id="fname" name="firstname" placeholder="Your first name">
-    <input type="text" id="lname" name="lastname" placeholder="Your last name">
-
-    <select id="improvements" name="imp" color="#FFCCCC">
-      <option text="text" value="q1">What would you like to see improved?</option>
       <br>
-      <option value="Front-end-projects">Front-end Projets</option>
-      <option value="Back-end-projects">Back-end Projects</option>
-      <option value="Data-visualization">Data Visualization</option>
-      <option value="Challenges">Challenges</option>
-      <option value="Open-source-community">Open Source Community</option>
-      <option value="Gitter-help-rooms">Gitter help rooms</option>
-      <option value="Videos">Videos</option>
-      <option value="City-meetups">City Meetups</option>
-      <option value="Wiki">Wiki</option>
-      <option value="Forum">Forum</option>
-      <option value="Additional Courses">Additional Courses</option>
-    </select>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name">
 
-
-    <input id="s2" type="submit2" value="Submit2">
-  </form>
-  </div>
-  <br>
-  <section>
-    <form>
-      <p>What is your best email?</p>
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email">
-
-
-
-      <fieldset>
-        <legend>What is your age group?</legend>
-        <input id="newbie" type="radio" name="levels" value="newbie">
-        <label for="newbie">Minor/Under 18/Student</label><br>
-        <input id="intermediate" type="radio" name="levels" value="intermediate">
-        <label for="intermediate">Adult/Over 18/Student</label><br>
-        <input id="master" type="radio" name="levels" value="master">
-        <label for="master">Adult/Over 18/Non-Student</label>
-      </fieldset>
-      <br>
-      <fieldset>
-        <legend>Which option best describes your current role?</legend>
-        <input id="newbie" type="radio" name="levels" value="newbie">
-        <label for="newbie">Full Time Worker</label><br>
-        <input id="intermediate" type="radio" name="levels" value="intermediate">
-        <label for="intermediate">Full Time Learner</label><br>
-        <input id="master" type="radio" name="levels" value="master">
-        <label for="master">Prefer Not To Say</label>
-      </fieldset>
-      <br>
-      <fieldset>
-        <legend>Would you recommend this course to a friend?</legend>
-        <input id="newbie" type="radio" name="levels" value="newbie">
-        <label for="newbie">Definitely</label><br>
-        <input id="intermediate" type="radio" name="levels" value="intermediate">
-        <label for="intermediate">Maybe</label><br>
-        <input id="master" type="radio" name="levels" value="master">
-        <label for="master">Not Sure</label>
-      </fieldset>
-      <br>
-      <fieldset>
-        <legend>What is your favorite feature of this code base?</legend>
-        <input id="newbie" type="radio" name="levels" value="newbie">
-        <label for="newbie">Challenges</label><br>
-        <input id="intermediate" type="radio" name="levels" value="intermediate">
-        <label for="intermediate">Projects</label><br>
-        <input id="master" type="radio" name="levels" value="master">
-        <label for="master">Community</label>
+      <select id="improvements" name="imp" color="#FFCCCC">
+        <option text="text" value="q1">What would you like to see improved?</option>
         <br>
+        <option value="Front-end-projects">Front-end Projets</option>
+        <option value="Back-end-projects">Back-end Projects</option>
+        <option value="Data-visualization">Data Visualization</option>
+        <option value="Challenges">Challenges</option>
+        <option value="Open-source-community">Open Source Community</option>
+        <option value="Gitter-help-rooms">Gitter help rooms</option>
+        <option value="Videos">Videos</option>
+        <option value="City-meetups">City Meetups</option>
+        <option value="Wiki">Wiki</option>
+        <option value="Forum">Forum</option>
+        <option value="Additional Courses">Additional Courses</option>
+      </select>
 
-        <input id="master-t2" type="radio-t2" name="levels-t2" value="true">...</l>
-      </fieldset>
-      <br>
-      <section>
 
-      </section>
-
-      <input type="submit2" name="submit2" value="Submit2">
+      <input id="s" type="submit" value="Submit">
     </form>
-    <div class="survey2" id="root">
-      <p>Any comments or suggestions?</p>
-      <textarea id="comments2" class="input-textarea2" name="comment2" placeholder="Enter your comment here..."
-        spellcheck="false" data-ms-editor="true"></textarea>
-
     </div>
-
-  </section>
-  <br>
-
-
-  <!-- Body of your page... -->
-
-
-
-  <script>
-    window.console = window.console || function (t) { };
-  </script>
+    <br>
+    <section>
+      <form>
+        <p>What is your best email?</p>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
 
 
-</body>
+
+        <fieldset>
+          <legend>What is your age group?</legend>
+          <input id="newbie" type="radio" name="levels" value="newbie">
+          <label for="newbie">Minor/Under 18/Student</label><br>
+          <input id="intermediate" type="radio" name="levels" value="intermediate">
+          <label for="intermediate">Adult/Over 18/Student</label><br>
+          <input id="master" type="radio" name="levels" value="master">
+          <label for="master">Adult/Over 18/Non-Student</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Which option best describes your current role?</legend>
+          <input id="newbie" type="radio" name="levels" value="newbie">
+          <label for="newbie">Full Time Worker</label><br>
+          <input id="intermediate" type="radio" name="levels" value="intermediate">
+          <label for="intermediate">Full Time Learner</label><br>
+          <input id="master" type="radio" name="levels" value="master">
+          <label for="master">Prefer Not To Say</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Would you recommend freeCodeCamp to a friend?</legend>
+          <input id="newbie" type="radio" name="levels" value="newbie">
+          <label for="newbie">Definitely</label><br>
+          <input id="intermediate" type="radio" name="levels" value="intermediate">
+          <label for="intermediate">Maybe</label><br>
+          <input id="master" type="radio" name="levels" value="master">
+          <label for="master">Not Sure</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>What is your favorite feature of freeCodeCamp?</legend>
+          <input id="newbie" type="radio" name="levels" value="newbie">
+          <label for="newbie">Challenges</label><br>
+          <input id="intermediate" type="radio" name="levels" value="intermediate">
+          <label for="intermediate">Projects</label><br>
+          <input id="master" type="radio" name="levels" value="master">
+          <label for="master">Community</label>
+          <br>
+
+          <input id="master-t" type="radio-t" name="levels-t" value="true">...</l>
+        </fieldset>
+        <br>
+        <section>
+
+        </section>
+
+        <input type="submit" name="submit" value="Submit">
+      </form>
+      <div class="survey" id="root">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."
+          spellcheck="false" data-ms-editor="true"></textarea>
+
+      </div>
+
+    </section>
+    <br>
+
+
+    <!-- make new scripts for future -->
+
+
+    <script src="script.js" type="module"></script>
+
+
+    <h3>Survey Number Two.</h3>
+    <p id="description2" id="name2" text="Name:">What is your Name?</p>
+
+
+    <form action="/action_page.php" id="survey-form2>
+          <input type=" text" id="name" name="name">
+      <br>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+      <select id="improvements" name="imp" color="#FFCCCC">
+        <option text="text" value="q1">What would you like to see improved?</option>
+        <br>
+        <option value="Front-end-projects">Front-end Projets</option>
+        <option value="Back-end-projects">Back-end Projects</option>
+        <option value="Data-visualization">Data Visualization</option>
+        <option value="Challenges">Challenges</option>
+        <option value="Open-source-community">Open Source Community</option>
+        <option value="Gitter-help-rooms">Gitter help rooms</option>
+        <option value="Videos">Videos</option>
+        <option value="City-meetups">City Meetups</option>
+        <option value="Wiki">Wiki</option>
+        <option value="Forum">Forum</option>
+        <option value="Additional Courses">Additional Courses</option>
+      </select>
+
+
+      <input id="s2" type="submit2" value="Submit2">
+    </form>
+    </div>
+    <br>
+    <section>
+      <form>
+        <p>What is your best email?</p>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+
+
+
+        <fieldset>
+          <legend>What is your age group?</legend>
+          <input id="newbie" type="radio" name="levels" value="newbie">
+          <label for="newbie">Minor/Under 18/Student</label><br>
+          <input id="intermediate" type="radio" name="levels" value="intermediate">
+          <label for="intermediate">Adult/Over 18/Student</label><br>
+          <input id="master" type="radio" name="levels" value="master">
+          <label for="master">Adult/Over 18/Non-Student</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Which option best describes your current role?</legend>
+          <input id="newbie" type="radio" name="levels" value="newbie">
+          <label for="newbie">Full Time Worker</label><br>
+          <input id="intermediate" type="radio" name="levels" value="intermediate">
+          <label for="intermediate">Full Time Learner</label><br>
+          <input id="master" type="radio" name="levels" value="master">
+          <label for="master">Prefer Not To Say</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Would you recommend this course to a friend?</legend>
+          <input id="newbie" type="radio" name="levels" value="newbie">
+          <label for="newbie">Definitely</label><br>
+          <input id="intermediate" type="radio" name="levels" value="intermediate">
+          <label for="intermediate">Maybe</label><br>
+          <input id="master" type="radio" name="levels" value="master">
+          <label for="master">Not Sure</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>What is your favorite feature of this code base?</legend>
+          <input id="newbie" type="radio" name="levels" value="newbie">
+          <label for="newbie">Challenges</label><br>
+          <input id="intermediate" type="radio" name="levels" value="intermediate">
+          <label for="intermediate">Projects</label><br>
+          <input id="master" type="radio" name="levels" value="master">
+          <label for="master">Community</label>
+          <br>
+
+          <input id="master-t2" type="radio-t2" name="levels-t2" value="true">...</l>
+        </fieldset>
+        <br>
+        <section>
+
+        </section>
+
+        <input type="submit2" name="submit2" value="Submit2">
+      </form>
+      <div class="survey2" id="root">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments2" class="input-textarea2" name="comment2" placeholder="Enter your comment here..."
+          spellcheck="false" data-ms-editor="true"></textarea>
+
+      </div>
+
+    </section>
+    <br>
+
+
+    <!-- Body of your page... -->
+
+
+
+    <script>
+      window.console = window.console || function (t) { };
+    </script>
+
+
+  </body>
 
 </html>
