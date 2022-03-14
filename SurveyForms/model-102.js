@@ -1,4 +1,4 @@
-import Contact from "../Contact.js";
+import Contact from "../contact.js";
 
 // Listener
 form.addEventListener("submit", function (event) {
