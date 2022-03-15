@@ -1,9 +1,8 @@
 const contactForm = document.getElementById("form");
 
 
-// person object
-// these are key: 'value-pairs', 
-// thus they are called getters and setters in the dev comunity.
+// person object these are key: 'value-pairs', 
+// thus they are called getters and setters in the dev community.
 // 
 const person = {
   firstName: 'Tester',
