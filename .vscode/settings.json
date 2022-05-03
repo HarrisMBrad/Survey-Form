@@ -1,5 +1,6 @@
 {
   "deno.suggest.imports.hosts": {
     "http://www.gstatic.com": false
-  }
+  },
+  "jira-plugin.workingProject": ""
 }
